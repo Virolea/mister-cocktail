@@ -3,5 +3,6 @@
   <p><%= dose.description%>  <%= dose.ingredient.name %> <%= link_to "remove dose", cocktail_dose_path(@cocktail, dose), method: :delete, data: { confirm: "Are you sure?" }%></p>
 <% end %>
 
-<%= link_to "add a dose", new_cocktail_dose_path(@cocktail) %>
+<%= render 'doses/form' %>
+
 
