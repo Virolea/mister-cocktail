@@ -1,4 +1,6 @@
 class Ingredient < ActiveRecord::Base
+  INGREDIENTS = ["lemon", "ice", "mint leaves", "orange juice", "rhum"]
+
   has_many :doses
   before_destroy :check_for_doses
 
