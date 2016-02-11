@@ -1,4 +1,11 @@
+<div class="banner-new">
+  <div class="content">
+      <h1>My cocktail</h1>
+  </div>
+</div>
+
+<h1>What's the name of your cocktail?</h1>
 <%= simple_form_for(@cocktail) do |f| %>
-<%= f.input :name %>
-<%= f.submit "Add Cocktail" %>
+<%= f.input :name,required: false, placeholder: "Sex on the beach" %>
+<%= f.submit "Add Cocktail", class: "btn btn-success"%>
 <% end %>

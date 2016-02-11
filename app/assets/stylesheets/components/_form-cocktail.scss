@@ -1,0 +1,13 @@
+.banner-new {
+  background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(image_path("banner-new.jpg"));
+  background-size: cover;
+  text-align: center;
+  height: 40vh;
+}
+
+.banner-new .content {
+  background: #42B693;
+  width: 100%;
+  color: white;
+  padding: 20px 0;
+}

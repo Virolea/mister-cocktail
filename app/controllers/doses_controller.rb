@@ -8,8 +8,6 @@ class DosesController < ApplicationController
   def create
     @dose = Dose.new(dose_params)
     @dose.cocktail = @cocktail
-    ingredient = Ingredient.where(name: params[:dose]["ingredient"]).first
-    @dose.ingredient = ingredient
     if @dose.save
       redirect_to cocktail_path(@cocktail)
     else
